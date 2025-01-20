@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1864,
+    "name": "2D Web Collection",
+    "phaseType": "2D Web Collection",
+    "collectionConfigurationId": 649
+  },
+  {
+    "id": 1866,
+    "name": "2D Collection",
+    "phaseType": "2D iOS Collection",
+    "collectionConfigurationId": null
+  },
+  {
+    "id": 1868,
+    "name": "test arcgis config",
+    "phaseType": "2D iOS Collection",
+    "collectionConfigurationId": 653
+  },
+  {
+    "id": 1886,
+    "name": "test module rules bug",
+    "phaseType": "2D iOS Collection",
+    "collectionConfigurationId": 683
+  },
+  {
+    "id": 1979,
+    "name": "Test QC Web",
+    "phaseType": "QC Web Collection",
+    "collectionConfigurationId": 686
+  },
+  {
+    "id": 1980,
+    "name": "Follow Up Inspection",
+    "phaseType": "2D iOS Field QC",
+    "collectionConfigurationId": null
+  },
+  {
+    "id": 1982,
+    "name": "Module ID Generation",
+    "phaseType": "2D iOS Collection",
+    "collectionConfigurationId": 724
+  },
+  {
+    "id": 1983,
+    "name": "test 2d web cloning",
+    "phaseType": "2D Web Collection",
+    "collectionConfigurationId": 723
+  }
+]

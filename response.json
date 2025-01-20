@@ -1,0 +1,7604 @@
+{
+  "id": 728,
+  "projectId": 267,
+  "locationId": null,
+  "categoryId": null,
+  "categoryTypeId": null,
+  "workflowId": 244,
+  "modules": [
+    {
+      "id": 18119,
+      "dependentModuleId": null,
+      "ordinal": 0,
+      "moduleId": 18358,
+      "importedColumnDefinitionId": null,
+      "type": "Text",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderText": "",
+        "required": false,
+        "id": 1101,
+        "ids": {
+          "DesignOptimizationReport": [
+            1101
+          ]
+        },
+        "label": "PM #",
+        "value": "",
+        "actionName": null,
+        "inputType": "TextInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18120,
+      "dependentModuleId": null,
+      "ordinal": 1,
+      "moduleId": 18359,
+      "importedColumnDefinitionId": null,
+      "type": "Date",
+      "designSoftwareProperty": null,
+      "meta": {
+        "required": false,
+        "id": 1102,
+        "ids": null,
+        "label": "Date",
+        "value": "",
+        "actionName": null,
+        "inputType": "DateInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18121,
+      "dependentModuleId": null,
+      "ordinal": 2,
+      "moduleId": 18360,
+      "importedColumnDefinitionId": null,
+      "type": "Text",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderText": "",
+        "required": false,
+        "id": 1103,
+        "ids": null,
+        "label": "Notification",
+        "value": "",
+        "actionName": null,
+        "inputType": "TextInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18122,
+      "dependentModuleId": null,
+      "ordinal": 3,
+      "moduleId": 18361,
+      "importedColumnDefinitionId": null,
+      "type": "Text",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderText": "",
+        "required": false,
+        "id": 1104,
+        "ids": null,
+        "label": "MAT Code",
+        "value": "",
+        "actionName": null,
+        "inputType": "TextInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18123,
+      "dependentModuleId": null,
+      "ordinal": 4,
+      "moduleId": 18362,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Ed Barrios",
+          "Zach Hadden",
+          "Chris Wolf",
+          "Karlo Mariano",
+          "Joey Herringshaw"
+        ],
+        "required": true,
+        "id": 1105,
+        "ids": null,
+        "label": "Field Estimator",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18124,
+      "dependentModuleId": null,
+      "ordinal": 5,
+      "moduleId": 18363,
+      "importedColumnDefinitionId": null,
+      "type": "Text",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderText": "",
+        "required": false,
+        "id": 1106,
+        "ids": null,
+        "label": "Phone",
+        "value": "",
+        "actionName": null,
+        "inputType": "TextInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18125,
+      "dependentModuleId": null,
+      "ordinal": 6,
+      "moduleId": 18364,
+      "importedColumnDefinitionId": null,
+      "type": "Text",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderText": "",
+        "required": false,
+        "id": 1108,
+        "ids": null,
+        "label": "Address",
+        "value": "",
+        "actionName": null,
+        "inputType": "TextInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18126,
+      "dependentModuleId": null,
+      "ordinal": 7,
+      "moduleId": 18365,
+      "importedColumnDefinitionId": null,
+      "type": "Text",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderText": "",
+        "required": false,
+        "id": 1110,
+        "ids": null,
+        "label": "County",
+        "value": "",
+        "actionName": null,
+        "inputType": "TextInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18127,
+      "dependentModuleId": null,
+      "ordinal": 8,
+      "moduleId": 18366,
+      "importedColumnDefinitionId": null,
+      "type": "GPS",
+      "designSoftwareProperty": null,
+      "meta": {
+        "required": false,
+        "id": 1111,
+        "ids": null,
+        "label": "GPS",
+        "value": "",
+        "actionName": null,
+        "inputType": "GPSInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18128,
+      "dependentModuleId": null,
+      "ordinal": 9,
+      "moduleId": 18367,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Franchise",
+          "Rear Easement",
+          "Private Property"
+        ],
+        "required": false,
+        "id": 1113,
+        "ids": null,
+        "label": "Location of Asset",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18129,
+      "dependentModuleId": null,
+      "ordinal": 10,
+      "moduleId": 18368,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Sidewalk",
+          "Asphalt",
+          "Dirt",
+          "Landscape"
+        ],
+        "required": false,
+        "id": 1114,
+        "ids": null,
+        "label": "Location Ground Type",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18130,
+      "dependentModuleId": null,
+      "ordinal": 11,
+      "moduleId": 18369,
+      "importedColumnDefinitionId": null,
+      "type": "SeparatedFeetAndInches",
+      "designSoftwareProperty": null,
+      "meta": {
+        "unit": "",
+        "lowerBound": 0,
+        "upperBound": 0,
+        "placeholderText": "",
+        "required": false,
+        "id": 1115,
+        "ids": null,
+        "label": "Sidewalk Width",
+        "value": "",
+        "actionName": null,
+        "inputType": "SeparatedFeetAndInchesInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [
+        {
+          "parentId": null,
+          "parentValue": null,
+          "meta": {
+            "unit": "",
+            "lowerBound": 0,
+            "upperBound": 0,
+            "placeholderText": "",
+            "required": false,
+            "id": 0,
+            "ids": null,
+            "label": "Sidewalk Width",
+            "value": "",
+            "actionName": null,
+            "inputType": "SeparatedFeetAndInchesInput",
+            "isEditable": true,
+            "parentModuleId": null,
+            "isVisible": true,
+            "validation": null,
+            "attachmentPropertyIds": []
+          },
+          "conditions": [
+            {
+              "parameters": [
+                "module|1866.18368",
+                "static|Sidewalk"
+              ],
+              "predicate": "IsEqualTo"
+            }
+          ],
+          "reducer": "all"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Unit",
+          "type": "String"
+        },
+        {
+          "name": "LowerBound",
+          "type": "Int32"
+        },
+        {
+          "name": "UpperBound",
+          "type": "Int32"
+        },
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18131,
+      "dependentModuleId": null,
+      "ordinal": 12,
+      "moduleId": 18370,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": false,
+        "id": 1116,
+        "ids": null,
+        "label": "Traffic Control Req'd?",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18132,
+      "dependentModuleId": null,
+      "ordinal": 13,
+      "moduleId": 18371,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": true,
+        "id": 1117,
+        "ids": null,
+        "label": "Accessible to Line Truck?",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18133,
+      "dependentModuleId": null,
+      "ordinal": 14,
+      "moduleId": 18372,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": true,
+        "id": 1118,
+        "ids": null,
+        "label": "Rail Crossing?",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18134,
+      "dependentModuleId": null,
+      "ordinal": 15,
+      "moduleId": 18373,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": true,
+        "id": 1119,
+        "ids": null,
+        "label": "Tree Trimming?",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18135,
+      "dependentModuleId": null,
+      "ordinal": 16,
+      "moduleId": 18374,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Lighty",
+          "Heavy",
+          "Normal",
+          "None"
+        ],
+        "required": true,
+        "id": 1120,
+        "ids": null,
+        "label": "Traffic Conditions?",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18136,
+      "dependentModuleId": null,
+      "ordinal": 17,
+      "moduleId": 18375,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Bobcat",
+          "Excavator",
+          "Backyard Machine"
+        ],
+        "required": false,
+        "id": 1121,
+        "ids": null,
+        "label": "Special Equipment Required?",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18137,
+      "dependentModuleId": null,
+      "ordinal": 18,
+      "moduleId": 18376,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": true,
+        "id": 1122,
+        "ids": null,
+        "label": "Hand Dig",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18138,
+      "dependentModuleId": null,
+      "ordinal": 19,
+      "moduleId": 18377,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": true,
+        "id": 1123,
+        "ids": null,
+        "label": "Irrigation Canal",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18139,
+      "dependentModuleId": null,
+      "ordinal": 20,
+      "moduleId": 18378,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No",
+          "Other"
+        ],
+        "required": true,
+        "id": 1124,
+        "ids": null,
+        "label": "Equip. Type/Size?",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18140,
+      "dependentModuleId": null,
+      "ordinal": 21,
+      "moduleId": 18379,
+      "importedColumnDefinitionId": null,
+      "type": "Text",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderText": "",
+        "required": false,
+        "id": 1185,
+        "ids": null,
+        "label": "Equipment Type Other",
+        "value": "",
+        "actionName": null,
+        "inputType": "TextInput",
+        "isEditable": false,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [
+        {
+          "parentId": null,
+          "parentValue": null,
+          "meta": {
+            "placeholderText": "",
+            "required": false,
+            "id": 1185,
+            "ids": null,
+            "label": "Equipment Type Other",
+            "value": "",
+            "actionName": null,
+            "inputType": "TextInput",
+            "isEditable": true,
+            "parentModuleId": null,
+            "isVisible": true,
+            "validation": null,
+            "attachmentPropertyIds": []
+          },
+          "conditions": [
+            {
+              "parameters": [
+                "module|1866.18378",
+                "static|Other"
+              ],
+              "predicate": "IsEqualTo"
+            }
+          ],
+          "reducer": "all"
+        }
+      ],
+      "properties": [
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18141,
+      "dependentModuleId": null,
+      "ordinal": 22,
+      "moduleId": 18380,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": false,
+        "id": 1172,
+        "ids": null,
+        "label": "Blue Tag",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18142,
+      "dependentModuleId": null,
+      "ordinal": 23,
+      "moduleId": 18381,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": false,
+        "id": 1173,
+        "ids": null,
+        "label": "Leaking",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18143,
+      "dependentModuleId": null,
+      "ordinal": 24,
+      "moduleId": 18382,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": false,
+        "id": 1174,
+        "ids": null,
+        "label": "Insulated",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18144,
+      "dependentModuleId": null,
+      "ordinal": 25,
+      "moduleId": 18383,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": false,
+        "id": 1125,
+        "ids": null,
+        "label": "Rusted?",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18145,
+      "dependentModuleId": null,
+      "ordinal": 26,
+      "moduleId": 18384,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Light",
+          "Mild",
+          "Severe"
+        ],
+        "required": false,
+        "id": 0,
+        "ids": null,
+        "label": "Rusted Severity",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": false,
+        "parentModuleId": null,
+        "isVisible": false,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [
+        {
+          "parentId": null,
+          "parentValue": null,
+          "meta": {
+            "placeholderOption": "",
+            "selected": "",
+            "options": [
+              "Light",
+              "Mild",
+              "Severe"
+            ],
+            "required": true,
+            "id": 0,
+            "ids": null,
+            "label": "Rusted Severity",
+            "value": "",
+            "actionName": null,
+            "inputType": "DropDownInput",
+            "isEditable": true,
+            "parentModuleId": null,
+            "isVisible": true,
+            "validation": null,
+            "attachmentPropertyIds": []
+          },
+          "conditions": [
+            {
+              "parameters": [
+                "module|1866.18383",
+                "static|Yes"
+              ],
+              "predicate": "IsEqualTo"
+            }
+          ],
+          "reducer": "all"
+        }
+      ],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18146,
+      "dependentModuleId": null,
+      "ordinal": 27,
+      "moduleId": 18385,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": true,
+        "id": 1126,
+        "ids": null,
+        "label": "Cut Outs & Fuses?",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18147,
+      "dependentModuleId": null,
+      "ordinal": 28,
+      "moduleId": 18386,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": true,
+        "id": 1127,
+        "ids": null,
+        "label": "Primary Bussing?",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18148,
+      "dependentModuleId": null,
+      "ordinal": 29,
+      "moduleId": 18387,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": true,
+        "id": 1128,
+        "ids": null,
+        "label": "Secondary Bussing?",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18149,
+      "dependentModuleId": null,
+      "ordinal": 30,
+      "moduleId": 18388,
+      "importedColumnDefinitionId": null,
+      "type": "Text",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderText": "",
+        "required": false,
+        "id": 1129,
+        "ids": null,
+        "label": "Check Adjacent Poles?",
+        "value": "N/A",
+        "actionName": null,
+        "inputType": "TextInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18150,
+      "dependentModuleId": null,
+      "ordinal": 31,
+      "moduleId": 18389,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": false,
+        "id": 1175,
+        "ids": null,
+        "label": "Lightning arrestors",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18151,
+      "dependentModuleId": null,
+      "ordinal": 32,
+      "moduleId": 18390,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": false,
+        "id": 1176,
+        "ids": null,
+        "label": "Tap Line Guards",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18152,
+      "dependentModuleId": null,
+      "ordinal": 33,
+      "moduleId": 18391,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": false,
+        "id": 1177,
+        "ids": null,
+        "label": "Sec attachment",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18153,
+      "dependentModuleId": null,
+      "ordinal": 34,
+      "moduleId": 18392,
+      "importedColumnDefinitionId": null,
+      "type": "Textarea",
+      "designSoftwareProperty": null,
+      "meta": {
+        "keyboardType": "Alphabet",
+        "placeholderText": "",
+        "required": false,
+        "id": 1131,
+        "ids": null,
+        "label": "G.O. 95 Infractions",
+        "value": "",
+        "actionName": null,
+        "inputType": "TextareaInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "KeyboardType",
+          "type": "KeyboardType"
+        },
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18154,
+      "dependentModuleId": null,
+      "ordinal": 35,
+      "moduleId": 18393,
+      "importedColumnDefinitionId": null,
+      "type": "Textarea",
+      "designSoftwareProperty": null,
+      "meta": {
+        "keyboardType": "Alphabet",
+        "placeholderText": "",
+        "required": true,
+        "id": 1132,
+        "ids": null,
+        "label": "Equipment Notes",
+        "value": "",
+        "actionName": null,
+        "inputType": "TextareaInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "KeyboardType",
+          "type": "KeyboardType"
+        },
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18155,
+      "dependentModuleId": null,
+      "ordinal": 36,
+      "moduleId": 18394,
+      "importedColumnDefinitionId": null,
+      "type": "SubMenu",
+      "designSoftwareProperty": null,
+      "meta": {
+        "required": false,
+        "id": 1133,
+        "ids": null,
+        "label": "Primary Details",
+        "value": "",
+        "actionName": null,
+        "inputType": "SubMenuInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18156,
+      "dependentModuleId": null,
+      "ordinal": 37,
+      "moduleId": 18395,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "1/0 ACSR",
+          "#2 Copper",
+          "Aluminum Triplex"
+        ],
+        "required": false,
+        "id": 1134,
+        "ids": null,
+        "label": "Size (Primary):",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": 18394,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18157,
+      "dependentModuleId": null,
+      "ordinal": 38,
+      "moduleId": 18396,
+      "importedColumnDefinitionId": null,
+      "type": "Numeric",
+      "designSoftwareProperty": null,
+      "meta": {
+        "initialValue": "",
+        "min": null,
+        "max": null,
+        "placeholderText": "",
+        "required": false,
+        "id": 1135,
+        "ids": null,
+        "label": "Quantity (Primary):",
+        "value": "",
+        "actionName": null,
+        "inputType": "NumericInput",
+        "isEditable": true,
+        "parentModuleId": 18394,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "InitialValue",
+          "type": "String"
+        },
+        {
+          "name": "Min",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "Max",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18158,
+      "dependentModuleId": null,
+      "ordinal": 39,
+      "moduleId": 18397,
+      "importedColumnDefinitionId": null,
+      "type": "SeparatedFeetAndInches",
+      "designSoftwareProperty": null,
+      "meta": {
+        "unit": "",
+        "lowerBound": 0,
+        "upperBound": 0,
+        "placeholderText": "",
+        "required": false,
+        "id": 1136,
+        "ids": null,
+        "label": "HOA (Primary):",
+        "value": "",
+        "actionName": null,
+        "inputType": "SeparatedFeetAndInchesInput",
+        "isEditable": true,
+        "parentModuleId": 18394,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "Unit",
+          "type": "String"
+        },
+        {
+          "name": "LowerBound",
+          "type": "Int32"
+        },
+        {
+          "name": "UpperBound",
+          "type": "Int32"
+        },
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18159,
+      "dependentModuleId": null,
+      "ordinal": 40,
+      "moduleId": 18398,
+      "importedColumnDefinitionId": null,
+      "type": "SubMenu",
+      "designSoftwareProperty": null,
+      "meta": {
+        "required": false,
+        "id": 1139,
+        "ids": null,
+        "label": "Equipment Details",
+        "value": "",
+        "actionName": null,
+        "inputType": "SubMenuInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18160,
+      "dependentModuleId": null,
+      "ordinal": 41,
+      "moduleId": 18399,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "transformer",
+          "capacitor",
+          "recloser"
+        ],
+        "required": false,
+        "id": 1140,
+        "ids": null,
+        "label": "Equipment",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": 18398,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18161,
+      "dependentModuleId": null,
+      "ordinal": 42,
+      "moduleId": 18400,
+      "importedColumnDefinitionId": null,
+      "type": "SeparatedFeetAndInches",
+      "designSoftwareProperty": null,
+      "meta": {
+        "unit": "",
+        "lowerBound": 0,
+        "upperBound": 0,
+        "placeholderText": "",
+        "required": false,
+        "id": 1141,
+        "ids": null,
+        "label": "Equipment Height",
+        "value": "",
+        "actionName": null,
+        "inputType": "SeparatedFeetAndInchesInput",
+        "isEditable": true,
+        "parentModuleId": 18398,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "Unit",
+          "type": "String"
+        },
+        {
+          "name": "LowerBound",
+          "type": "Int32"
+        },
+        {
+          "name": "UpperBound",
+          "type": "Int32"
+        },
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18162,
+      "dependentModuleId": null,
+      "ordinal": 43,
+      "moduleId": 18401,
+      "importedColumnDefinitionId": null,
+      "type": "SubMenu",
+      "designSoftwareProperty": null,
+      "meta": {
+        "required": false,
+        "id": 1142,
+        "ids": null,
+        "label": "Secondary Details",
+        "value": "",
+        "actionName": null,
+        "inputType": "SubMenuInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18163,
+      "dependentModuleId": null,
+      "ordinal": 44,
+      "moduleId": 18402,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Al Duplex",
+          "Al Triplex",
+          "Al Quadreplex"
+        ],
+        "required": false,
+        "id": 1143,
+        "ids": null,
+        "label": "Size (Secondary):",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": 18401,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18164,
+      "dependentModuleId": null,
+      "ordinal": 45,
+      "moduleId": 18403,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "8",
+          "10",
+          "12",
+          "16"
+        ],
+        "required": false,
+        "id": 1137,
+        "ids": null,
+        "label": "Crossarm (Primary):",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": 18394,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18165,
+      "dependentModuleId": null,
+      "ordinal": 46,
+      "moduleId": 18404,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "pin",
+          "post",
+          "suspension",
+          "deadend"
+        ],
+        "required": false,
+        "id": 1138,
+        "ids": null,
+        "label": "Insulator (Primary):",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": 18394,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18166,
+      "dependentModuleId": null,
+      "ordinal": 47,
+      "moduleId": 18405,
+      "importedColumnDefinitionId": null,
+      "type": "Numeric",
+      "designSoftwareProperty": null,
+      "meta": {
+        "initialValue": "",
+        "min": null,
+        "max": null,
+        "placeholderText": "",
+        "required": false,
+        "id": 1144,
+        "ids": null,
+        "label": "Quantity (Secondary):",
+        "value": "",
+        "actionName": null,
+        "inputType": "NumericInput",
+        "isEditable": true,
+        "parentModuleId": 18401,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "InitialValue",
+          "type": "String"
+        },
+        {
+          "name": "Min",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "Max",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18167,
+      "dependentModuleId": null,
+      "ordinal": 48,
+      "moduleId": 18406,
+      "importedColumnDefinitionId": null,
+      "type": "SeparatedFeetAndInches",
+      "designSoftwareProperty": null,
+      "meta": {
+        "unit": "",
+        "lowerBound": 0,
+        "upperBound": 0,
+        "placeholderText": "",
+        "required": false,
+        "id": 1145,
+        "ids": null,
+        "label": "HOA (Secondary):",
+        "value": "",
+        "actionName": null,
+        "inputType": "SeparatedFeetAndInchesInput",
+        "isEditable": true,
+        "parentModuleId": 18401,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "Unit",
+          "type": "String"
+        },
+        {
+          "name": "LowerBound",
+          "type": "Int32"
+        },
+        {
+          "name": "UpperBound",
+          "type": "Int32"
+        },
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18168,
+      "dependentModuleId": null,
+      "ordinal": 49,
+      "moduleId": 18407,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "8",
+          "10",
+          "12",
+          "16"
+        ],
+        "required": false,
+        "id": 1146,
+        "ids": null,
+        "label": "Crossarm (Secondary):",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": 18401,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18169,
+      "dependentModuleId": null,
+      "ordinal": 50,
+      "moduleId": 18408,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "clevis",
+          "sec roller",
+          "pin"
+        ],
+        "required": false,
+        "id": 1147,
+        "ids": null,
+        "label": "Insulator (Secondary):",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": 18401,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18170,
+      "dependentModuleId": null,
+      "ordinal": 51,
+      "moduleId": 18409,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": true,
+        "id": 1149,
+        "ids": null,
+        "label": "Streetlight?",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18171,
+      "dependentModuleId": null,
+      "ordinal": 52,
+      "moduleId": 18410,
+      "importedColumnDefinitionId": null,
+      "type": "SeparatedFeetAndInches",
+      "designSoftwareProperty": null,
+      "meta": {
+        "unit": "",
+        "lowerBound": 0,
+        "upperBound": 0,
+        "placeholderText": "",
+        "required": false,
+        "id": 1150,
+        "ids": null,
+        "label": "Bracket Length",
+        "value": "",
+        "actionName": null,
+        "inputType": "SeparatedFeetAndInchesInput",
+        "isEditable": false,
+        "parentModuleId": null,
+        "isVisible": false,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [
+        {
+          "parentId": null,
+          "parentValue": null,
+          "meta": {
+            "unit": "",
+            "lowerBound": 0,
+            "upperBound": 0,
+            "placeholderText": "",
+            "required": true,
+            "id": 0,
+            "ids": null,
+            "label": "Bracket Length",
+            "value": "",
+            "actionName": null,
+            "inputType": "SeparatedFeetAndInchesInput",
+            "isEditable": true,
+            "parentModuleId": null,
+            "isVisible": true,
+            "validation": null,
+            "attachmentPropertyIds": []
+          },
+          "conditions": [
+            {
+              "parameters": [
+                "module|1866.18409",
+                "static|Yes"
+              ],
+              "predicate": "IsEqualTo"
+            }
+          ],
+          "reducer": "all"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Unit",
+          "type": "String"
+        },
+        {
+          "name": "LowerBound",
+          "type": "Int32"
+        },
+        {
+          "name": "UpperBound",
+          "type": "Int32"
+        },
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18172,
+      "dependentModuleId": null,
+      "ordinal": 53,
+      "moduleId": 18411,
+      "importedColumnDefinitionId": null,
+      "type": "SeparatedFeetAndInches",
+      "designSoftwareProperty": null,
+      "meta": {
+        "unit": "",
+        "lowerBound": 0,
+        "upperBound": 0,
+        "placeholderText": "",
+        "required": false,
+        "id": 1151,
+        "ids": null,
+        "label": "Streetlight Height:",
+        "value": "",
+        "actionName": null,
+        "inputType": "SeparatedFeetAndInchesInput",
+        "isEditable": false,
+        "parentModuleId": null,
+        "isVisible": false,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [
+        {
+          "parentId": null,
+          "parentValue": null,
+          "meta": {
+            "unit": "",
+            "lowerBound": 0,
+            "upperBound": 0,
+            "placeholderText": "",
+            "required": true,
+            "id": 0,
+            "ids": null,
+            "label": "Streetlight Height:",
+            "value": "",
+            "actionName": null,
+            "inputType": "SeparatedFeetAndInchesInput",
+            "isEditable": true,
+            "parentModuleId": null,
+            "isVisible": true,
+            "validation": null,
+            "attachmentPropertyIds": []
+          },
+          "conditions": [
+            {
+              "parameters": [
+                "module|1866.18409",
+                "static|Yes"
+              ],
+              "predicate": "IsEqualTo"
+            }
+          ],
+          "reducer": "all"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Unit",
+          "type": "String"
+        },
+        {
+          "name": "LowerBound",
+          "type": "Int32"
+        },
+        {
+          "name": "UpperBound",
+          "type": "Int32"
+        },
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18173,
+      "dependentModuleId": null,
+      "ordinal": 54,
+      "moduleId": 18412,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": true,
+        "id": 1152,
+        "ids": null,
+        "label": "SmartMeter Equipment?",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18174,
+      "dependentModuleId": null,
+      "ordinal": 55,
+      "moduleId": 18413,
+      "importedColumnDefinitionId": null,
+      "type": "Text",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderText": "",
+        "required": false,
+        "id": 1153,
+        "ids": null,
+        "label": "SmartMeter Type?",
+        "value": "",
+        "actionName": null,
+        "inputType": "TextInput",
+        "isEditable": false,
+        "parentModuleId": null,
+        "isVisible": false,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [
+        {
+          "parentId": null,
+          "parentValue": null,
+          "meta": {
+            "placeholderText": "",
+            "required": true,
+            "id": 0,
+            "ids": null,
+            "label": "SmartMeter Type?",
+            "value": "",
+            "actionName": null,
+            "inputType": "TextInput",
+            "isEditable": true,
+            "parentModuleId": null,
+            "isVisible": true,
+            "validation": null,
+            "attachmentPropertyIds": []
+          },
+          "conditions": [
+            {
+              "parameters": [
+                "module|1866.18412",
+                "static|Yes"
+              ],
+              "predicate": "IsEqualTo"
+            }
+          ],
+          "reducer": "all"
+        }
+      ],
+      "properties": [
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18175,
+      "dependentModuleId": null,
+      "ordinal": 56,
+      "moduleId": 18414,
+      "importedColumnDefinitionId": null,
+      "type": "SeparatedFeetAndInches",
+      "designSoftwareProperty": null,
+      "meta": {
+        "unit": "",
+        "lowerBound": 0,
+        "upperBound": 0,
+        "placeholderText": "",
+        "required": false,
+        "id": 1154,
+        "ids": null,
+        "label": "SmartMeter Height",
+        "value": "",
+        "actionName": null,
+        "inputType": "SeparatedFeetAndInchesInput",
+        "isEditable": false,
+        "parentModuleId": null,
+        "isVisible": false,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [
+        {
+          "parentId": null,
+          "parentValue": null,
+          "meta": {
+            "unit": "",
+            "lowerBound": 0,
+            "upperBound": 0,
+            "placeholderText": "",
+            "required": true,
+            "id": 0,
+            "ids": null,
+            "label": "SmartMeter Height",
+            "value": "",
+            "actionName": null,
+            "inputType": "SeparatedFeetAndInchesInput",
+            "isEditable": true,
+            "parentModuleId": null,
+            "isVisible": true,
+            "validation": null,
+            "attachmentPropertyIds": []
+          },
+          "conditions": [
+            {
+              "parameters": [
+                "module|1866.18412",
+                "static|Yes"
+              ],
+              "predicate": "IsEqualTo"
+            }
+          ],
+          "reducer": "all"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Unit",
+          "type": "String"
+        },
+        {
+          "name": "LowerBound",
+          "type": "Int32"
+        },
+        {
+          "name": "UpperBound",
+          "type": "Int32"
+        },
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18176,
+      "dependentModuleId": null,
+      "ordinal": 57,
+      "moduleId": 18415,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": true,
+        "id": 1155,
+        "ids": null,
+        "label": "Guard Arm?",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18177,
+      "dependentModuleId": null,
+      "ordinal": 58,
+      "moduleId": 18416,
+      "importedColumnDefinitionId": null,
+      "type": "SeparatedFeetAndInches",
+      "designSoftwareProperty": null,
+      "meta": {
+        "unit": "",
+        "lowerBound": 0,
+        "upperBound": 0,
+        "placeholderText": "",
+        "required": false,
+        "id": 1156,
+        "ids": null,
+        "label": "Guard Arm Height",
+        "value": "",
+        "actionName": null,
+        "inputType": "SeparatedFeetAndInchesInput",
+        "isEditable": false,
+        "parentModuleId": null,
+        "isVisible": false,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [
+        {
+          "parentId": null,
+          "parentValue": null,
+          "meta": {
+            "unit": "",
+            "lowerBound": 0,
+            "upperBound": 0,
+            "placeholderText": "",
+            "required": true,
+            "id": 0,
+            "ids": null,
+            "label": "Guard Arm Height",
+            "value": "",
+            "actionName": null,
+            "inputType": "SeparatedFeetAndInchesInput",
+            "isEditable": true,
+            "parentModuleId": null,
+            "isVisible": true,
+            "validation": null,
+            "attachmentPropertyIds": []
+          },
+          "conditions": [
+            {
+              "parameters": [
+                "module|1866.18415",
+                "static|Yes"
+              ],
+              "predicate": "IsEqualTo"
+            }
+          ],
+          "reducer": "all"
+        }
+      ],
+      "properties": [
+        {
+          "name": "Unit",
+          "type": "String"
+        },
+        {
+          "name": "LowerBound",
+          "type": "Int32"
+        },
+        {
+          "name": "UpperBound",
+          "type": "Int32"
+        },
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18178,
+      "dependentModuleId": null,
+      "ordinal": 59,
+      "moduleId": 18417,
+      "importedColumnDefinitionId": null,
+      "type": "SubMenu",
+      "designSoftwareProperty": null,
+      "meta": {
+        "required": false,
+        "id": 1148,
+        "ids": null,
+        "label": "Miscellaneous Details",
+        "value": "",
+        "actionName": null,
+        "inputType": "SubMenuInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18179,
+      "dependentModuleId": null,
+      "ordinal": 60,
+      "moduleId": 18418,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "CATV",
+          "Fiber",
+          "Phone"
+        ],
+        "required": false,
+        "id": 1157,
+        "ids": null,
+        "label": "Comm Type",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": 18417,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18180,
+      "dependentModuleId": null,
+      "ordinal": 61,
+      "moduleId": 18419,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          ".25",
+          ".5",
+          "1",
+          "1.5",
+          "2",
+          "2.5",
+          "3",
+          "3.5",
+          "4"
+        ],
+        "required": false,
+        "id": 1158,
+        "ids": null,
+        "label": "Comm Size",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": 18417,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18181,
+      "dependentModuleId": null,
+      "ordinal": 62,
+      "moduleId": 18420,
+      "importedColumnDefinitionId": null,
+      "type": "SeparatedFeetAndInches",
+      "designSoftwareProperty": null,
+      "meta": {
+        "unit": "",
+        "lowerBound": 0,
+        "upperBound": 0,
+        "placeholderText": "",
+        "required": false,
+        "id": 1159,
+        "ids": null,
+        "label": "Comm Height",
+        "value": "",
+        "actionName": null,
+        "inputType": "SeparatedFeetAndInchesInput",
+        "isEditable": true,
+        "parentModuleId": 18417,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "Unit",
+          "type": "String"
+        },
+        {
+          "name": "LowerBound",
+          "type": "Int32"
+        },
+        {
+          "name": "UpperBound",
+          "type": "Int32"
+        },
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18182,
+      "dependentModuleId": null,
+      "ordinal": 63,
+      "moduleId": 18421,
+      "importedColumnDefinitionId": null,
+      "type": "SubMenu",
+      "designSoftwareProperty": null,
+      "meta": {
+        "required": false,
+        "id": 1160,
+        "ids": null,
+        "label": "Anchor Details",
+        "value": "",
+        "actionName": null,
+        "inputType": "SubMenuInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18183,
+      "dependentModuleId": null,
+      "ordinal": 64,
+      "moduleId": 18422,
+      "importedColumnDefinitionId": null,
+      "type": "SeparatedFeetAndInches",
+      "designSoftwareProperty": null,
+      "meta": {
+        "unit": "",
+        "lowerBound": 0,
+        "upperBound": 0,
+        "placeholderText": "",
+        "required": false,
+        "id": 1161,
+        "ids": null,
+        "label": "Delta height",
+        "value": "",
+        "actionName": null,
+        "inputType": "SeparatedFeetAndInchesInput",
+        "isEditable": true,
+        "parentModuleId": 18421,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "Unit",
+          "type": "String"
+        },
+        {
+          "name": "LowerBound",
+          "type": "Int32"
+        },
+        {
+          "name": "UpperBound",
+          "type": "Int32"
+        },
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18184,
+      "dependentModuleId": null,
+      "ordinal": 65,
+      "moduleId": 18423,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "required": false,
+        "id": 1162,
+        "ids": null,
+        "label": "Located in Sidewalk?",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": 18421,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18185,
+      "dependentModuleId": null,
+      "ordinal": 66,
+      "moduleId": 18424,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Pisa",
+          "Plate",
+          "Buried"
+        ],
+        "required": false,
+        "id": 1163,
+        "ids": null,
+        "label": "Anchor Type",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": 18421,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18186,
+      "dependentModuleId": null,
+      "ordinal": 67,
+      "moduleId": 18425,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "10m",
+          "15m",
+          "20m"
+        ],
+        "required": false,
+        "id": 1164,
+        "ids": null,
+        "label": "Anchor Size",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": 18421,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18187,
+      "dependentModuleId": null,
+      "ordinal": 68,
+      "moduleId": 18426,
+      "importedColumnDefinitionId": null,
+      "type": "SeparatedFeetAndInches",
+      "designSoftwareProperty": null,
+      "meta": {
+        "unit": "",
+        "lowerBound": 0,
+        "upperBound": 0,
+        "placeholderText": "",
+        "required": false,
+        "id": 1183,
+        "ids": null,
+        "label": "Lead",
+        "value": "",
+        "actionName": null,
+        "inputType": "SeparatedFeetAndInchesInput",
+        "isEditable": true,
+        "parentModuleId": 18421,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "Unit",
+          "type": "String"
+        },
+        {
+          "name": "LowerBound",
+          "type": "Int32"
+        },
+        {
+          "name": "UpperBound",
+          "type": "Int32"
+        },
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18188,
+      "dependentModuleId": null,
+      "ordinal": 69,
+      "moduleId": 18427,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Anchor A",
+          "Anchor B",
+          "Anchor C",
+          "Anchor D"
+        ],
+        "required": false,
+        "id": 1191,
+        "ids": null,
+        "label": "Anchor ID",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": 18421,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18189,
+      "dependentModuleId": null,
+      "ordinal": 70,
+      "moduleId": 18428,
+      "importedColumnDefinitionId": null,
+      "type": "SubMenu",
+      "designSoftwareProperty": null,
+      "meta": {
+        "required": false,
+        "id": 1186,
+        "ids": null,
+        "label": "Guy Details",
+        "value": "",
+        "actionName": null,
+        "inputType": "SubMenuInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18190,
+      "dependentModuleId": null,
+      "ordinal": 71,
+      "moduleId": 18429,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Anchor A",
+          "Anchor B",
+          "Anchor C",
+          "Anchor D"
+        ],
+        "required": false,
+        "id": 1187,
+        "ids": null,
+        "label": "Attached To Anchor",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": 18428,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18191,
+      "dependentModuleId": null,
+      "ordinal": 72,
+      "moduleId": 18430,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "Comm",
+          "Transmission",
+          "Distribution"
+        ],
+        "required": false,
+        "id": 1188,
+        "ids": null,
+        "label": "Guy Type",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": 18428,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18192,
+      "dependentModuleId": null,
+      "ordinal": 73,
+      "moduleId": 18431,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "1/4",
+          "1/2",
+          "5/8",
+          "3/8"
+        ],
+        "required": false,
+        "id": 1189,
+        "ids": null,
+        "label": "Guy Size",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": 18428,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18193,
+      "dependentModuleId": null,
+      "ordinal": 74,
+      "moduleId": 18432,
+      "importedColumnDefinitionId": null,
+      "type": "SeparatedFeetAndInches",
+      "designSoftwareProperty": null,
+      "meta": {
+        "unit": "",
+        "lowerBound": 0,
+        "upperBound": 0,
+        "placeholderText": "",
+        "required": false,
+        "id": 1190,
+        "ids": null,
+        "label": "Attachment HT",
+        "value": "",
+        "actionName": null,
+        "inputType": "SeparatedFeetAndInchesInput",
+        "isEditable": true,
+        "parentModuleId": 18428,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "Unit",
+          "type": "String"
+        },
+        {
+          "name": "LowerBound",
+          "type": "Int32"
+        },
+        {
+          "name": "UpperBound",
+          "type": "Int32"
+        },
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18194,
+      "dependentModuleId": null,
+      "ordinal": 75,
+      "moduleId": 18433,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "35",
+          "40",
+          "45",
+          "50",
+          "55",
+          "60",
+          "65",
+          "70"
+        ],
+        "required": false,
+        "id": 1178,
+        "ids": null,
+        "label": "Pole Height",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18195,
+      "dependentModuleId": null,
+      "ordinal": 76,
+      "moduleId": 18434,
+      "importedColumnDefinitionId": null,
+      "type": "DropDown",
+      "designSoftwareProperty": null,
+      "meta": {
+        "placeholderOption": "",
+        "selected": "",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "H1",
+          "H2",
+          "H3"
+        ],
+        "required": false,
+        "id": 1179,
+        "ids": null,
+        "label": "Pole Class",
+        "value": "",
+        "actionName": null,
+        "inputType": "DropDownInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "PlaceholderOption",
+          "type": "String"
+        },
+        {
+          "name": "Selected",
+          "type": "String"
+        },
+        {
+          "name": "Options",
+          "type": "List`1"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18196,
+      "dependentModuleId": null,
+      "ordinal": 77,
+      "moduleId": 18435,
+      "importedColumnDefinitionId": null,
+      "type": "Numeric",
+      "designSoftwareProperty": null,
+      "meta": {
+        "initialValue": "",
+        "min": null,
+        "max": null,
+        "placeholderText": "",
+        "required": false,
+        "id": 1181,
+        "ids": null,
+        "label": "Angle",
+        "value": "",
+        "actionName": null,
+        "inputType": "NumericInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "InitialValue",
+          "type": "String"
+        },
+        {
+          "name": "Min",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "Max",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18197,
+      "dependentModuleId": null,
+      "ordinal": 78,
+      "moduleId": 18436,
+      "importedColumnDefinitionId": null,
+      "type": "Numeric",
+      "designSoftwareProperty": null,
+      "meta": {
+        "initialValue": "",
+        "min": null,
+        "max": null,
+        "placeholderText": "",
+        "required": false,
+        "id": 1180,
+        "ids": null,
+        "label": "Ground Circumference",
+        "value": "",
+        "actionName": null,
+        "inputType": "NumericInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "InitialValue",
+          "type": "String"
+        },
+        {
+          "name": "Min",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "Max",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    },
+    {
+      "id": 18198,
+      "dependentModuleId": null,
+      "ordinal": 79,
+      "moduleId": 18437,
+      "importedColumnDefinitionId": null,
+      "type": "Numeric",
+      "designSoftwareProperty": null,
+      "meta": {
+        "initialValue": "",
+        "min": 1900.0,
+        "max": 2026.0,
+        "placeholderText": "",
+        "required": false,
+        "id": 1182,
+        "ids": null,
+        "label": "Date Nail Year",
+        "value": "",
+        "actionName": null,
+        "inputType": "NumericInput",
+        "isEditable": true,
+        "parentModuleId": null,
+        "isVisible": true,
+        "validation": null,
+        "attachmentPropertyIds": []
+      },
+      "rules": [],
+      "properties": [
+        {
+          "name": "InitialValue",
+          "type": "String"
+        },
+        {
+          "name": "Min",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "Max",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "PlaceholderText",
+          "type": "String"
+        },
+        {
+          "name": "Required",
+          "type": "Boolean"
+        },
+        {
+          "name": "Id",
+          "type": "Int32"
+        },
+        {
+          "name": "Ids",
+          "type": "Dictionary`2"
+        },
+        {
+          "name": "Label",
+          "type": "String"
+        },
+        {
+          "name": "Value",
+          "type": "String"
+        },
+        {
+          "name": "ActionName",
+          "type": "String"
+        },
+        {
+          "name": "InputType",
+          "type": "String"
+        },
+        {
+          "name": "IsEditable",
+          "type": "Boolean"
+        },
+        {
+          "name": "ParentModuleId",
+          "type": "Nullable`1"
+        },
+        {
+          "name": "IsVisible",
+          "type": "Boolean"
+        },
+        {
+          "name": "Validation",
+          "type": "ValidationRule"
+        },
+        {
+          "name": "AttachmentPropertyIds",
+          "type": "List`1"
+        }
+      ],
+      "preloadedModuleId": null,
+      "preloadedModuleWorkflowPhaseId": null
+    }
+  ],
+  "defaultModules": []
+}
