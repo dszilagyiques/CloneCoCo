@@ -2,185 +2,169 @@
 """
 request_manager.py
 
-Workflow:
-  1) Use get_phases_with_coco() to retrieve all phases in the project with null collectionConfigurationId.
-  2) Prompt the user to select an eligible phase ID.
-  3) Confirm the phase name and the project name from "api/v1/users/me/projects".
-  4) If user confirms, transform the server response and PUT it to /api/v1/collection-configurations.
-  5) Save the successful PUT response in 'response.json' (do not print it).
-
-Requires:
-  - get_phases_with_coco function from get_phases_with_coco.py
-  - transform_server_response_to_minimal from transform.py
-  - Environment variables for QTM_ENVIRONMENT, AUTH_TOKEN, PROJECT_ID, etc.
+Adds verbose logging to diagnose potential mismatches between the
+provided "existingCoCoServerResponse.json" and the final payload.
 """
 
 import os
 import json
+import datetime
 import requests
 from dotenv import load_dotenv
 
 from getCollectionConfigurations import get_phases_with_coco
 from transform import transform_server_response_to_minimal
 
-# Same environment dictionary used elsewhere
 ENVIRONMENTS = {
     "qa": "https://qtm-backend-qa.azurewebsites.net",
-    "dev": "https://qtm-backend-dev.azurewebsites.net",
+    "staging": "https://qtm-backend-staging.azurewebsites.net",
     "prod": "https://qtm-backend.azurewebsites.net"
-    # Add additional environments as needed
 }
 
 def prompt_and_send_put():
-    """
-    Main function for orchestrating the prompt workflow:
-      1) get_phases_with_coco to retrieve all phases for the current project
-      2) filter by phases that have collectionConfigurationId == None
-      3) prompt user to pick one of those phase IDs
-      4) confirm by displaying the name & the project name
-      5) if confirmed, transform & PUT the new CoCo
-      6) save the response to response.json
-    """
-    load_dotenv()  # ensure we have fresh .env variables
+    load_dotenv()
     auth_token = os.getenv("AUTH_TOKEN")
-    if not auth_token:
-        print("ERROR: AUTH_TOKEN not found. Make sure you have authenticated first.")
-        return
-
-    # Determine environment base URL
     environment_name = os.getenv("QTM_ENVIRONMENT", "qa").lower().strip()
     base_url = ENVIRONMENTS.get(environment_name)
+    project_id_str = os.getenv("PROJECT_ID")
+
+    log(f"Starting prompt_and_send_put with environment='{environment_name}' and project_id='{project_id_str}'")
+
+    if not auth_token:
+        log("ERROR: AUTH_TOKEN not found. Authentication may have failed.")
+        return
     if not base_url:
-        print(f"ERROR: Unknown environment '{environment_name}'. Check QTM_ENVIRONMENT in .env.")
+        log(f"ERROR: Unrecognized environment '{environment_name}'. Aborting.")
+        return
+    if not project_id_str:
+        log("ERROR: PROJECT_ID not set in .env. Aborting.")
         return
 
-    # Retrieve project info from .env (and possibly from user/projects endpoint to get name)
-    project_id_env = os.getenv("PROJECT_ID")
-    if not project_id_env:
-        print("ERROR: PROJECT_ID not found in .env. Cannot proceed.")
-        return
     try:
-        project_id = int(project_id_env)
+        project_id = int(project_id_str)
     except ValueError:
-        print(f"ERROR: PROJECT_ID in .env is not a valid integer: {project_id_env}")
+        log(f"ERROR: PROJECT_ID in .env is not a valid integer: {project_id_str}")
         return
 
-    # 1) Get phases with CoCo info
-    print("Fetching phases with CoCo data (get_phases_with_coco)...")
+    # Step 1: Fetch phases
+    log("Fetching phases via get_phases_with_coco...")
     all_phases = get_phases_with_coco(project_id=project_id)
     if not all_phases:
-        print("No phases returned, or an error occurred. Aborting.")
+        log("ERROR: No phases returned, or an error occurred. Aborting.")
         return
 
-    # 2) Filter only those with null collectionConfigurationId
+    # Filter only those with null CoCo
     eligible_phases = [p for p in all_phases if p.get("collectionConfigurationId") is None]
+    log(f"Found {len(eligible_phases)} eligible phases (collectionConfigurationId == null).")
+
     if not eligible_phases:
-        print("No phases are eligible (none have null collectionConfigurationId). Aborting.")
+        log("No eligible phases found. Aborting.")
         return
 
-    # Show user the eligible phase IDs for selection
-    print("\nEligible Workflow Phases (Null collectionConfigurationId):")
+    # List them out
+    log("Listing eligible phases:")
     for p in eligible_phases:
-        print(f"  ID: {p['id']}, Name: {p['name']}, PhaseType: {p['phaseType']}")
+        log(f" -> ID={p['id']} Name='{p['name']}' PhaseType='{p['phaseType']}'")
 
-    # 3) Prompt user to pick one
+    # Prompt
     selected_phase = None
     while not selected_phase:
-        choice_str = input("\nEnter the ID of the phase you wish to configure: ").strip()
+        choice_str = input("Enter the ID of the phase to configure: ").strip()
         try:
             choice_id = int(choice_str)
         except ValueError:
-            print("Invalid integer. Please try again.")
+            log("Invalid integer. Try again.")
             continue
 
-        # Validate
-        match = next((ph for ph in eligible_phases if ph['id'] == choice_id), None)
-        if not match:
-            print(f"No eligible phase with ID = {choice_id}. Please select a valid ID from the list.")
+        found = next((ph for ph in eligible_phases if ph['id'] == choice_id), None)
+        if not found:
+            log(f"No eligible phase with ID={choice_id}. Please pick from the listed IDs.")
         else:
-            selected_phase = match
+            selected_phase = found
 
-    # 4) Confirm the selected phase by displaying name & project name
+    phase_id = selected_phase["id"]
     phase_name = selected_phase["name"]
-    project_name = get_project_name(base_url, auth_token, project_id)
-    print(f"\nYou have selected phase ID = {selected_phase['id']}, name = '{phase_name}'")
-    if project_name:
-        print(f"Project: {project_name} (ID = {project_id})")
-    else:
-        print(f"Project ID = {project_id} (Name lookup failed)")
+    log(f"User selected phase_id={phase_id}, name='{phase_name}'")
 
+    # Confirm
+    from request_manager import get_project_name  # or define inline
+    project_name = get_project_name(base_url, auth_token, project_id)
+    log(f"Project name from /users/me/projects: '{project_name}'")
+
+    print(f"You have selected phase ID = {phase_id}, Name = '{phase_name}' for project '{project_name}' (ID={project_id}).")
     confirm = input("Is this correct? (Y/N): ").strip().lower()
     if confirm not in ("y", "yes"):
-        print("Operation canceled by user.")
+        log("User canceled operation.")
         return
 
-    # 5) Transform the server response to the minimal payload
-    minimal_payload = transform_server_response_to_minimal(selected_phase["id"])
+    # Step 2: Transform
+    # (Here is the crucial part where you specify the file to read)
+    existing_coco_file = "existingCoCoServerResponse.json"
+    log(f"Starting transformation from file='{existing_coco_file}' with workflowPhaseId={phase_id}")
+    minimal_payload = transform_server_response_to_minimal(
+        workflow_phase_id=phase_id,
+        existing_coco_path=existing_coco_file,
+        debug_log=False  # set to True to see logs from transform.py
+    )
+
     if not minimal_payload:
-        print("Failed to create minimal payload. Aborting.")
+        log("ERROR: transform_server_response_to_minimal() returned None. Aborting.")
         return
 
-    # 6) Perform the PUT request
+    # Optionally preview
+    log("Transformation completed. Minimal payload top-level keys:")
+    for key in minimal_payload.keys():
+        log(f"   -> {key}")
+
+    # Step 3: PUT
     put_collection_configuration(minimal_payload, base_url, auth_token)
 
-
 def put_collection_configuration(payload, base_url, auth_token):
-    """
-    Sends a PUT request to /api/v1/collection-configurations with the given payload.
-    On success, saves the JSON response to 'response.json' in the working directory.
-    Does not print the response JSON to console.
-    """
     url = f"{base_url}/api/v1/collection-configurations"
     headers = {
-        "Accept": "application/json, text/plain, */*",
         "Authorization": f"Bearer {auth_token}",
         "Content-Type": "application/json",
+        "Accept": "application/json, text/plain, */*",
         "User-Agent": "Mozilla/5.0"
     }
 
-    print(f"\nSending PUT to {url}...")
+    log(f"Sending PUT to: {url}")
     try:
         resp = requests.put(url, headers=headers, json=payload)
         resp.raise_for_status()
         data = resp.json()
-
-        # Save response to file
+        # Save to response.json
         with open("response.json", "w", encoding="utf-8") as f:
             json.dump(data, f, indent=2)
-        print("SUCCESS: PUT request returned 2xx. Response saved to 'response.json'.")
+        log("SUCCESS: PUT returned 2xx. Saved to 'response.json'.")
     except requests.RequestException as e:
-        print(f"ERROR during PUT request: {e}")
+        log(f"PUT request failed: {e}")
         if e.response is not None:
-            print("Response text:", e.response.text)
-
-
-# ---------------------------------------------------------
-# Additional Helper Function to Retrieve Project Name
-# ---------------------------------------------------------
+            log(f"Response status code: {e.response.status_code}")
+            log(f"Response text: {e.response.text}")
 
 def get_project_name(base_url, auth_token, project_id):
-    """
-    Calls GET /api/v1/users/me/projects to find the project
-    whose 'id' matches 'project_id' and returns its 'name'.
-    If not found or an error occurs, returns None.
-    """
+    """ Same function from your script. """
     url = f"{base_url}/api/v1/users/me/projects"
     headers = {
-        "Accept": "application/json, text/plain, */*",
         "Authorization": f"Bearer {auth_token}",
+        "Accept": "application/json, text/plain, */*",
         "User-Agent": "Mozilla/5.0"
     }
-
     try:
-        resp = requests.get(url, headers=headers)
-        resp.raise_for_status()
-        project_list = resp.json()  # should be a list of projects
-        if not isinstance(project_list, list):
+        r = requests.get(url, headers=headers)
+        r.raise_for_status()
+        projects = r.json()
+        if not isinstance(projects, list):
             return None
-
-        for proj in project_list:
-            if proj.get("id") == project_id:
-                return proj.get("name")
+        for pr in projects:
+            if pr.get("id") == project_id:
+                return pr.get("name")
         return None
     except requests.RequestException:
         return None
+
+def log(message):
+    """ Utility for timestamped logs. """
+    now_str = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"[{now_str}] [request_manager] {message}")

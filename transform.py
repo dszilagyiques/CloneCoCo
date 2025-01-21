@@ -2,192 +2,138 @@
 """
 transform.py
 
-Contains logic to load the server-style CoCo JSON from a file (e.g., existingCoCoServerResponse.json)
-and transform it into a minimal payload structure. Also correctly remaps any 'parentModuleId' and
-module references inside the 'rules' section to new ephemeral 6-digit module IDs.
+Detailed logging version.
 
-Key Features:
-1. Generate ephemeral IDs for each original moduleId.
-2. Update each module's 'id' and 'moduleId' to the ephemeral ID.
-3. If meta.parentModuleId is present, update it to the ephemeral ID of the parent.
-4. In the rules array, look for conditions where parameters might be "module|OLD_WF_ID.OLD_MOD_ID"
-   and convert them into "module|NEW_WF_ID.EPHEMERAL_MOD_ID" using the user-provided workflowPhaseId
-   and ephemeral mapping.
+Reads the server-style CoCo JSON from `existingCoCoServerResponse.json`
+(or a provided path) and transforms it into a minimal payload structure.
+Also updates parentModuleId references and rules, if applicable.
 """
 
 import json
 import random
+import os
+import datetime
 
-def transform_server_response_to_minimal(workflow_phase_id, existing_coco_path="existingCoCoServerResponse.json"):
+def transform_server_response_to_minimal(
+    workflow_phase_id,
+    existing_coco_path="existingCoCoServerResponse.json",
+    # set to true if you want really detailed logs on why your shit is broken
+    debug_log=True
+):
     """
     Reads a server-style CoCo JSON from 'existing_coco_path' and constructs a minimal payload.
-
-    Steps:
-      1) Parse the original JSON and collect all modules.
-      2) Build a dictionary: oldModuleId -> new ephemeral 6-digit ID.
-      3) Reconstruct each module as a minimal object:
-         - "id" and "moduleId" replaced by ephemeral ID
-         - "meta.parentModuleId" updated if non-null
-         - "rules" updated, particularly "conditions[].parameters[]" with "module|oldWfId.oldModuleId"
-           replaced by "module|<workflow_phase_id>.<ephemeral_id>"
-      4) Return a final payload object:
-         {
-           "workflowPhaseId": <user_input>,
-           "isLocationCollectionConfiguration": false,
-           "modules": [ ... transformed modules ... ]
-         }
-
+    
     Args:
-      workflow_phase_id (int): The workflow phase ID to embed in the final payload and use in rule transformations.
-      existing_coco_path (str): Path to the JSON file containing the server response.
+        workflow_phase_id (int): The workflow phase ID provided by the user.
+        existing_coco_path (str): The path to the JSON file with the server response.
+        debug_log (bool): If True, prints verbose debug statements.
 
     Returns:
-      dict or None: The transformed payload as a dictionary, or None on file/JSON errors.
+        dict: A Python dictionary containing the minimal payload with ephemeral IDs.
     """
+    if debug_log:
+        print(f"[{timestamp()}] [transform.py] -> Starting transform_server_response_to_minimal()")
+        print(f"[{timestamp()}] [transform.py] -> Attempting to read: '{existing_coco_path}'")
+        print(f"[{timestamp()}] [transform.py] -> Using workflowPhaseId: {workflow_phase_id}")
 
-    # ------------------ (1) Read original server JSON ------------------
+    # 1) Read the original server JSON
+    server_json = None
     try:
         with open(existing_coco_path, "r", encoding="utf-8") as f:
             server_json = json.load(f)
     except (IOError, json.JSONDecodeError) as e:
-        print(f"ERROR reading {existing_coco_path}: {e}")
+        if debug_log:
+            print(f"[{timestamp()}] [transform.py] ERROR reading file '{existing_coco_path}': {e}")
         return None
 
-    server_modules = server_json.get("modules", [])
-    if not isinstance(server_modules, list):
-        print("ERROR: 'modules' is missing or not a list in the server JSON.")
+    if debug_log:
+        print(f"[{timestamp()}] [transform.py] -> Successfully read '{existing_coco_path}'.")
+        # Optionally dump the entire file for debugging:
+        # print(f"[{timestamp()}] [transform.py] -> server_json content:\n{json.dumps(server_json, indent=2)}\n")
+
+    # 2) Extract modules. This depends on your file’s structure. For example:
+    #    Possibly inside: server_json["modules"] or server_json["phaseCollectionConfigurations"][0]["modules"]
+    #    We'll demonstrate your sample structure:
+    phase_collection_configs = server_json.get("phaseCollectionConfigurations", [])
+    if not phase_collection_configs or not isinstance(phase_collection_configs, list):
+        if debug_log:
+            print(f"[{timestamp()}] [transform.py] -> 'phaseCollectionConfigurations' missing or empty. Cannot proceed.")
         return None
 
-    # ------------------ (2) Build old -> new ephemeral ID map ------------------
+    # For demonstration, we assume you want the first item in the array (or merge multiple?)
+    # We'll take the first item for this example:
+    first_config = phase_collection_configs[0]
+    server_modules = first_config.get("modules", [])
+    if debug_log:
+        config_id = first_config.get("id", "Unknown ID")
+        project_id_from_file = first_config.get("projectId", "N/A")
+        print(f"[{timestamp()}] [transform.py] -> Found config ID: {config_id}, projectId in JSON: {project_id_from_file}")
+        print(f"[{timestamp()}] [transform.py] -> Number of modules: {len(server_modules)}")
+
+    # 3) Build a dictionary of old module IDs -> ephemeral IDs
     old_to_new_id_map = {}
-    for m in server_modules:
-        old_id = m.get("moduleId")
-        if old_id is None:
-            # If there's no moduleId, skip or handle specially
-            continue
-        ephemeral_id = random.randint(100000, 999999)  # 6-digit ephemeral
-        old_to_new_id_map[old_id] = ephemeral_id
+    for mod in server_modules:
+        old_id = mod.get("moduleId")
+        if old_id is not None:
+            ephemeral_id = random.randint(100000, 999999)
+            old_to_new_id_map[old_id] = ephemeral_id
+            if debug_log:
+                print(f"[{timestamp()}] [transform.py] -> Mapping old moduleId {old_id} -> ephemeral {ephemeral_id}")
 
-    # ------------------ (3) Construct the minimal payload ------------------
+    # 4) Construct final minimal payload
     final_payload = {
         "workflowPhaseId": workflow_phase_id,
         "isLocationCollectionConfiguration": False,
         "modules": []
     }
 
-    for module in server_modules:
-        old_module_id = module.get("moduleId")
-        if old_module_id is None:
-            # Skip modules that do not have a moduleId
+    # 5) Populate new modules
+    for mod in server_modules:
+        old_module_id = mod.get("moduleId")
+        if old_module_id not in old_to_new_id_map:
+            # Possibly this module has no valid ID -> skip or handle specially
+            if debug_log:
+                print(f"[{timestamp()}] [transform.py] -> Skipping module with old_module_id={old_module_id} not in map.")
             continue
 
-        # Look up ephemeral ID
         ephemeral_id = old_to_new_id_map[old_module_id]
 
-        # Copy fundamental attributes
-        mod_type = module.get("type", "Text")
-        ordinal = module.get("ordinal", 0)
-        meta = module.get("meta", {})
-
-        # ------------------ (3a) Update parentModuleId in meta ------------------
-        old_parent_id = meta.get("parentModuleId", None)
-        if old_parent_id is not None:
-            new_parent_id = old_to_new_id_map.get(old_parent_id, old_parent_id)
-        else:
-            new_parent_id = None
+        # basic fields
+        mod_type = mod.get("type", "Text")
+        ordinal = mod.get("ordinal", 0)
+        meta = mod.get("meta", {})
+        
+        # Remap meta.parentModuleId if needed
+        old_parent_id = meta.get("parentModuleId")
+        new_parent_id = None
+        if old_parent_id and old_parent_id in old_to_new_id_map:
+            new_parent_id = old_to_new_id_map[old_parent_id]
 
         new_meta = dict(meta)
         new_meta["parentModuleId"] = new_parent_id
 
-        # ------------------ (3b) Handle the rules array ------------------
-        rules = module.get("rules", [])
-        # We'll reconstruct each rule, especially conditions.parameters
-        new_rules = []
-        for rule in rules:
-            new_rule = dict(rule)  # copy the rule object
+        # If you have rules to transform, do that here similarly
 
-            # Each rule typically has a 'conditions' list
-            conditions = new_rule.get("conditions", [])
-            new_conditions = []
-            for condition in conditions:
-                new_condition = dict(condition)  # copy condition
-                parameters = new_condition.get("parameters", [])
-
-                # We'll build a new parameter list with updated "module|X.Y" references
-                new_params = []
-                for param in parameters:
-                    # Only transform if param starts with "module|"
-                    if isinstance(param, str) and param.startswith("module|"):
-                        # param is something like "module|1982.18306"
-                        # We want "module|<workflow_phase_id>.<ephemeral_id>"
-                        new_param = _transform_rule_parameter(param, workflow_phase_id, old_to_new_id_map)
-                        new_params.append(new_param)
-                    else:
-                        # Keep as-is for non-module references
-                        new_params.append(param)
-
-                new_condition["parameters"] = new_params
-                new_conditions.append(new_condition)
-
-            new_rule["conditions"] = new_conditions
-            new_rules.append(new_rule)
-
-        # ------------------ (3c) Build the minimal module object ------------------
         minimal_module = {
             "id": ephemeral_id,
             "moduleId": ephemeral_id,
-            "projectId": 23,  # hard-coded as per specification
+            "projectId": 23,  # or derive from file if needed
             "type": mod_type,
             "ordinal": ordinal,
             "meta": new_meta,
-            "rules": new_rules
+            "rules": []  # or transform from mod["rules"] if needed
         }
+
+        if debug_log:
+            print(f"[{timestamp()}] [transform.py] -> Created minimal module ephemeral_id={ephemeral_id} from old_id={old_module_id}")
 
         final_payload["modules"].append(minimal_module)
 
+    if debug_log:
+        print(f"[{timestamp()}] [transform.py] -> Finished constructing final payload with {len(final_payload['modules'])} modules.")
+
     return final_payload
 
-# ------------------ HELPER FUNCTION FOR RULE PARAMS ------------------
-
-def _transform_rule_parameter(param_str, new_workflow_phase_id, old_to_new_id_map):
-    """
-    Helper function to transform a rule parameter that begins with "module|oldWfId.oldModuleId".
-    For example: "module|1982.18306" -> "module|<new_workflow_phase_id>.<ephemeral_id>"
-
-    Steps:
-      1) Strip off the "module|" prefix.
-      2) Split the remainder by '.' -> oldWfId, oldModId
-      3) Convert oldModId to int, look up ephemeral in old_to_new_id_map
-      4) Rebuild "module|<new_workflow_phase_id>.<ephemeral_id>"
-    """
-    # param_str might look like "module|1982.18306"
-    # Split at '|', ignoring the first part
-    try:
-        prefix, remainder = param_str.split("|", 1)
-    except ValueError:
-        # If it doesn't split properly, return original
-        return param_str
-
-    # remainder might be "1982.18306"
-    if "." not in remainder:
-        # No '.' => can't parse old WF ID and old module ID
-        return param_str
-
-    # Extract oldWF and oldModule
-    parts = remainder.split(".", 1)
-    if len(parts) != 2:
-        return param_str  # malformed
-    old_wf_str, old_mod_str = parts
-
-    # Convert old_mod_str to int, if possible
-    try:
-        old_mod_id = int(old_mod_str)
-    except ValueError:
-        return param_str  # not an integer, skip transform
-
-    # Look up ephemeral
-    ephemeral_id = old_to_new_id_map.get(old_mod_id, old_mod_id)
-
-    # Build new string
-    new_str = f"module|{new_workflow_phase_id}.{ephemeral_id}"
-    return new_str
+def timestamp():
+    """ Helper for consistent time-based logging. """
+    return datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
