@@ -150,8 +150,8 @@ Follow the instructions in the **File Descriptions** section to run the appropri
 1. **Prompts the user for a `workflowPhaseId`**. The script ensures that this phase does **not** already have a `collectionConfigurationId`.  
 2. **Requires an empty collection configuration**. It will only work if the chosen workflow phase currently has no CoCo.  
 3. **Does not copy column definitions**. There is no need to replicate the underlying dataset.  
-4. **Copies module roles**. If modules in the original have roles, they are preserved in the transformed payload.  
-5. **Ensures the phase export type is the same**. Although the script is “phase-type aware,” you can copy 2D modules into other 2D-based phases (e.g., 2D iOS → 2D Web).  
+4. **Copies module rules**. If modules in the original have rules, they are preserved in the transformed payload.  
+5. **Ensure the phase export type is the same**. You can copy module roles so long as the phase export type matches. 
 6. **Cross-compatible with other 2D phases**. For instance, a 2D iOS Collection can be cloned into a 2D Web Collection.  
 7. **Preloaded modules are not copied**. Preloaded modules are tied to specialized data in certain phases, so they are excluded to avoid broken references.
 
